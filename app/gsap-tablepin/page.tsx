@@ -9,6 +9,7 @@ export default function GroupTableBody() {
                 <div className='w-screen h-screen justify-center items-center flex'>
                         {/* <GroupTable/> */}
                         <GSAPtype/>
+                        
                 </div>)
         }
         
