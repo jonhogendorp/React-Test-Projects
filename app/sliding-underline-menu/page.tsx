@@ -13,6 +13,7 @@ export default function Page() {
 			const button = document.querySelectorAll('button')[index];
 			const buttonRect = button.getBoundingClientRect();
 			const navRect = underline.parentElement?.getBoundingClientRect();
+			console.log(button, buttonRect, navRect);
 			if (navRect) {
 				const left = buttonRect.left - navRect.left;
 				const width = buttonRect.width;
