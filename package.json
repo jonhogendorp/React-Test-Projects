@@ -9,6 +9,18 @@
     "lint": "next lint",
     "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
   },
+  "webpack": {
+    "rules": [
+      {
+        "test": "/.scss$/",
+        "use": [
+          "style-loader",
+          "css-loader",
+          "sass-loader"
+        ]
+      }
+    ]
+  },
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@headlessui/react": "^2.0.4",
@@ -23,6 +35,8 @@
     "react": "^18",
     "react-dom": "^18",
     "recharts": "^2.12.7",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
@@ -32,6 +46,7 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.3",
+    "node-sass": "^9.0.0",
     "postcss": "^8",
     "prettier": "3.2.5",
     "tailwindcss": "^3.3.0",
