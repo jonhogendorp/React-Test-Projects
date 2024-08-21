@@ -23,7 +23,26 @@ export default function LottieAnimation() {
     import('@lottiefiles/lottie-player');
   });
   return (
-    <div className='flex items-center justify-center h-screen'>
+    <div className='flex flex-col items-center justify-center h-full'>
+      <DotLottieReact
+        src='https://lottie.host/2abea7fb-a478-4417-9d53-9fc573e93490/EtD2sgmn9v.json'
+        loop={true}
+        autoplay={true}
+        style={{ width: '300px', height: '300px' }}
+      />
+
+      <Player
+        autoplay={true}
+        loop={true}
+        src='https://lottie.host/2abea7fb-a478-4417-9d53-9fc573e93490/EtD2sgmn9v.json'
+        style={{ height: '300px', width: '300px' }}
+      >
+        <Controls
+          visible={true}
+          buttons={['play', 'repeat', 'frame', 'debug']}
+        />
+      </Player>
+
       <DotLottieReact
         src='./spikey-eyes-movin.json'
         loop={true}
