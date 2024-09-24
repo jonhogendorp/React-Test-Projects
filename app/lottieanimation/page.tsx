@@ -25,6 +25,12 @@ export default function LottieAnimation() {
   return (
     <div className='flex flex-col items-center justify-center h-full'>
       <DotLottieReact
+        src='https://lottie.host/bd2ef522-3503-4709-b767-2e36bd224663/Kwl1ebq5JD.json'
+        loop={true}
+        autoplay={true}
+        style={{ width: '300px', height: '300px' }}
+      />
+      <DotLottieReact
         src='https://lottie.host/2abea7fb-a478-4417-9d53-9fc573e93490/EtD2sgmn9v.json'
         loop={true}
         autoplay={true}
